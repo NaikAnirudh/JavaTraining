@@ -1,0 +1,21 @@
+package program2;
+//To check the impact on object when the variable is static
+public class Program2 {
+	public static int a1= 10;
+	public static void main(String[] args)
+	{
+	
+	
+	Program2 obj1= new Program2();
+	Program2 obj2= new Program2();
+	
+	System.out.println(obj1.a1);
+	System.out.println(obj2.a1);
+	
+	obj2.a1=20;
+	
+	System.out.println(obj1.a1);
+	System.out.println(obj2.a1);
+	}
+
+}
